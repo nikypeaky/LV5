@@ -1,15 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace lv05
 {
-     interface IShipable
+    public interface IDataset
     {
-        double Price { get; }
-        double Weight { get; }
-        string Description(int depth = 0);
+        ReadOnlyCollection<List<string>> GetData();
     }
 }

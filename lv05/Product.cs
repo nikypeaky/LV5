@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace lv05
 {
-     class Product : IShipable
+    public class Product : IShipable 
     {
         private double price;
         private string description;
